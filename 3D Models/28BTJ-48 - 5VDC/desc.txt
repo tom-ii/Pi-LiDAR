@@ -1,1 +1,0 @@
-These are the data sheets and 3D models for the 28BTJ-48-5 Stepper Motor used in this project.
