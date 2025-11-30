@@ -1,0 +1,17 @@
+Run the following commands in the Terminal to make sure Raspbian is up to date. Adding -y to the end of apt-get commands instructs the program to automatically answer yes to any questions rather than waiting for you to type Y or N.
+
+sudo apt-get update
+
+sudo apt-get upgrade -y
+Once this is complete, it’s time to install your new Apache web server:
+
+sudo apt-get install apache2 -y
+
+Apache is the main piece of software you need to serve webpages to client PCs.
+
+Your website’s files are located in the /var/www/html
+
+directory. Run the following to make this folder accessible to the default user, pi.
+
+sudo chown -R pi /var/www/html
+Delete the index.html file found there and upload your new intranet site to that folder. Your new site should now be accessible from your local network
